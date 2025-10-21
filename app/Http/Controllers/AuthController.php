@@ -13,6 +13,9 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
+
+        return $this->responseSuccess(['data' => 'ok']);
+
         Log::channel('single')->info(json_encode([
             'header' => $request->header(),
             'body' => $request->all()
