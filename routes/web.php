@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\web\LoginController;
+use App\Http\Controllers\web\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/web', function () {
+    return redirect('/web/modules');
 });
+
+Route::prefix('web/modules')
+    ->middleware('is-login')
+    ->group(function () {
+        Route::get('/', [HomeController::class, 'index']);
+});
+
+Route::get('/web/signin', [LoginController::class, 'index']);
+Route::get('/web/signup', [LoginController::class, 'register']);
