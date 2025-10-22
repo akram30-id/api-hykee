@@ -1,0 +1,42 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0px;
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0);
+    /* default transparan */
+    color: white;
+    /* supaya teks tetap terlihat */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* garis putih lembut */
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* alpha 0.1 putih transparan */
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4);
+    /* garis agak lebih terang saat aktif */
+    box-shadow: none;
+    /* hilangkan glow biru default Bootstrap */
+}
+
+p {
+    font-size: 10pt;
+}
+
+.btn-hykee-primary {
+    background-color: black;
+    color: #ffffff;
+}
+
+.btn-hykee-primary:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+a {
+    font-size: 10pt;
+}
