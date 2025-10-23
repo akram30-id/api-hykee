@@ -62,7 +62,7 @@
                                         <p>Remember me</p>
                                     </div>
 
-                                    <a href="/web/reset-password" class="text-white">Forget password?</a>
+                                    <a href="/reset-password" class="text-white">Forget password?</a>
 
                                 </div>
                             </div>
@@ -75,7 +75,7 @@
 
                             <div class="d-flex justify-content-center">
                                 <p style="margin-right: 5px;">Don't have an account?</p>
-                                <a href="/web/signup" class="text-white fw-bold">Sign Up</a>
+                                <a href="/signup" class="text-white fw-bold">Sign Up</a>
                             </div>
 
                         </form>

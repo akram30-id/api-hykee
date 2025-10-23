@@ -90,7 +90,7 @@
 
                             <div class="d-flex justify-content-center">
                                 <p style="margin-right: 5px;">Already have an account?</p>
-                                <a href="/web/signin" class="text-white fw-bold">Sign In</a>
+                                <a href="/signin" class="text-white fw-bold">Sign In</a>
                             </div>
 
                         </form>
