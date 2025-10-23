@@ -16,7 +16,7 @@
 
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
-            <div class="col-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="card p-3">
                     <div class="card-body">
 
