@@ -15,15 +15,15 @@ use App\Http\Controllers\web\HomeController;
 |
 */
 
-Route::get('/web', function () {
-    return redirect('/web/modules');
+Route::get('/', function () {
+    return redirect('/modules');
 });
 
-Route::prefix('web/modules')
+Route::prefix('modules')
     ->middleware('is-login')
     ->group(function () {
         Route::get('/', [HomeController::class, 'index']);
 });
 
-Route::get('/web/signin', [LoginController::class, 'index']);
-Route::get('/web/signup', [LoginController::class, 'register']);
+Route::get('/signin', [LoginController::class, 'index']);
+Route::get('/signup', [LoginController::class, 'register']);
