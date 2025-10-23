@@ -17,7 +17,7 @@ class IsAuthenticateMiddleware
     public function handle(Request $request, Closure $next)
     {
         if (!$request->session()->has('login_token')) {
-            return redirect('/web/signin');
+            return redirect('/signin');
         }
 
         return $next($request);
